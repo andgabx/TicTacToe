@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="playerForm" class="player-form">
+        <input type="text" id="player1" placeholder="Player 1">
+        <input type="text" id="player2" placeholder="Player 2">
+        <button onclick="startGame()">Start</button>
+    </div>
+
+  
+    <div id="ticTacToeBoard" class="hidden"> 
+        <div class="square" onclick="makeMove(this, 0)"></div>
+        <div class="square" onclick="makeMove(this, 1)"></div>
+        <div class="square" onclick="makeMove(this, 2)"></div>
+        <div class="square" onclick="makeMove(this, 3)"></div>
+        <div class="square" onclick="makeMove(this, 4)"></div>
+        <div class="square" onclick="makeMove(this, 5)"></div>
+        <div class="square" onclick="makeMove(this, 6)"></div>
+        <div class="square" onclick="makeMove(this, 7)"></div>
+        <div class="square" onclick="makeMove(this, 8)"></div>
+    </div>
+
+    <div id="winnerModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="winnerAnnouncement"></p>
+        </div>
+    </div>
+</body>
+</html>
