@@ -28,6 +28,8 @@
         cursor: pointer;
     }
 
+    
+
     .hidden {
         display: none;
     }
@@ -57,4 +59,66 @@
     .player-form {
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: 2px solid #4d342f; 
+        background-color: #5b4039; 
+        color: white; 
+        font-size: 1em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    button:hover {
+        background-color: #4d342f; 
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    #playerForm {
+        padding: 20px;
+        background-color: #5b4039; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        margin-bottom: 20px; 
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+        margin: 10px 0; 
+        border: 2px solid #4d342f; 
+        background-color: #efebe9; 
+        border-radius: 5px; 
+        width: calc(100% - 24px); 
+        box-sizing: border-box; 
+    }
+    
+    input[type="text"]:focus {
+        border-color: #3e2c28; 
+        outline: none; 
+    }
+
+    #restartButton {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: 2px solid #4d342f; 
+        background-color: #5b4039; 
+        color: white; 
+        font-size: 1em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    #restartButton:hover {
+        background-color: #4d342f; 
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     }
